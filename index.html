@@ -29,9 +29,11 @@ urls[9] = "http://learninginhand.com/posts";
 urls[10] = "http://learninginhand.com/pet";
 
 var random = Math.floor(Math.random()*urls.length);
-
+ setTimeout("alertWelcome();",5000);
+    function alertWelcome()
+{
 window.location = urls[random];
-
+}
 </script>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
