@@ -1,2 +1,2 @@
-# code404z.github.io-
+# code404z
 This is my first website
