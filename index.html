@@ -31,7 +31,11 @@ var random = Math.floor(Math.random()*urls.length);
  setTimeout("alertWelcome();",5000);
     function alertWelcome()
 {
-window.location = urls[random];
+if (typeof random === "undefined") {
+  location.reload();
+} else {
+  window.location = urls[random];
+}
 }
 </script>
 
