@@ -33,6 +33,8 @@ var random = Math.floor(Math.random()*urls.length);
 {
 if (typeof random === "undefined") {
   location.reload();
+} elseif (typeof urls === "undefined") {
+   location.reload(); 
 } else {
   window.location = urls[random];
 }
